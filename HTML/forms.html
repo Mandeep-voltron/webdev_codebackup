@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- note we use id in for in label tag note it imp. -->
+    <form action="post">
+        <div>
+            <label for="username">Enter your username:</label>
+            <input autofocus required type="text" id="username" name="username" placeholder=" Enter your username">
+        </div>
+
+        <div>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="suii" name="suii" value="yes">
+            <label for="suii">Suii</label>
+        </div>
+
+        <div>
+            <label for="textarea">Write Something</label>
+            <br>
+            <textarea name="comment" id="textarea" rows="4" cols="5" placeholder="e.g. SUIIII"></textarea>
+        </div>
+
+        <div>
+            <label for="car">Car</label>
+            <select name="car" id="car">
+                <option value="RR PHANTOM">RR PHANTOM</option>
+                <option value="MAYBACH">MAYBACH</option>
+                <option value="G WAGON">G WAGON</option>
+            </select>
+        </div>
+        <div>
+            <input type="submit">
+        </div>
+    </form>
+
+</body>
+
+</html>
