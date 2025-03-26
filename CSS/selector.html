@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* types of selectors */
+         /* element selector */
+        div{
+            /* background-color: rgb(109, 109, 161); */
+        }
+        /* class selector */
+        .red{
+            background-color: red;
+        }
+        /* id selector */
+        #green{
+            background-color: green;
+        }
+        /* child selector */
+        div>p{
+            background-color: blue;
+        }
+        /* decendent selector */
+        div p{
+            background-color: blue;
+        }
+        /* universel selector */
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        /* psuedo selector */
+        a:visited{
+        color: yellow;
+        }
+        a:active{
+            background-color: blueviolet;
+        }
+        a:hover{
+            background-color: rgb(17, 17, 15);
+        }
+        a:link{
+            color: green;
+        }
+        p:first-child{
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div class="one">
+       i am one
+       <p>suiiiiiiiiii
+        ksjfodhslkdh
+       </p>
+    </div>
+    <div class="red">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, obcaecati.
+    </div>
+    <span id="green">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, obcaecati.
+    </span>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, obcaecati.
+        <article> <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat corrupti alias illo deleniti maiores.
+        </p>
+    </article>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat corrupti alias illo deleniti maiores.
+        </p>
+    </div>
+    <a  href="https://www.google.com" target="_blank">go to google</a>
+    <a  href="https://www.amazon.com" target="_blank">go to amazon</a>
+</body>
+</html>
