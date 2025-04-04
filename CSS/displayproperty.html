@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display properties</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        } 
+
+        .box {
+            border: 2px solid blue;
+            display: inline;
+            padding: 44px;
+            margin: 34px; 
+            /*use inline-block to apply padding and margin from top*/
+            /*none to remove it from the screen(removes space)*/
+            /*visibility:hidden to remove it from the screen(not removes space)*/
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        I am a box
+    </div>
+    <div class="box">
+        also a nice box
+    </div>
+    <span> I am a span</span>
+    <span> I am another span</span>
+</body>
+
+</html>

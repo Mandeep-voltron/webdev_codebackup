@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>specifityandcascade</title>
+    <link rel="stylesheet" href="specifityandcascade.css">
+    <style>
+        h1 {
+            color: aqua;
+        }
+
+        .cred {
+            color: red;
+        }
+
+        .cyellow {
+            color: yellow !important;
+        }
+
+        .cpurple {
+            color: purple;
+        }
+
+        /* 
+        attribute selector
+        [data-x=a]{
+            background-color: red;
+        } */
+    </style>
+</head>
+<!-- 
+1. positon or order(if the selector is same): the property given at the last will be active
+2. Specifity: inline style(1000)>>id(100)>>class ,psuedo or attribute(10)>>element1 >> universal selector(0)
+3. user agent: by browser
+4. !important:(keyword)
+5. if there are more selectors it will add the points
+e.g. h1.cyellow :1+10->11
+
+-->
+
+<body>
+    <h1 class="cred cyellow cpurple" data-x="a">
+        CSS SPECIFITY
+    </h1>
+
+</body>
+
+</html>

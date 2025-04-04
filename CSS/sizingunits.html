@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sizing units🗿</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 12px;
+        }
+
+        .box {
+            /* margin: auto; :to make it in centre*/
+            border: 2px solid black;
+            background-color: aquamarine;
+            /* width: 233px; */
+            width: 80vw;
+            height: 15vh;
+            margin: 23px auto;
+            box-sizing: border-box;
+        }
+
+        .container {
+            /* margin: auto; :to make it in centre*/
+            border: 2px solid black;
+            background-color: aquamarine;
+            /* width: 233px; */
+            width: 80vw;
+            /*80% of display width*/
+            /* height: 80vh; */
+            min-height: 80vh;
+            /*it will adjust its height*/
+            /* font-size: 16px; */
+            margin: 23px auto;
+            box-sizing: border-box;
+        }
+
+        .container p {
+            /* font-size: 2em; */
+            font-size: 2rem;
+            /*root ka font size ka double*/
+            width: 50%;
+            /*50% of its parent(if parents height is fixed then only)*/
+        }
+
+        .mycont {
+            box-sizing: border-box;
+            margin: 23px auto;
+            border: 2px solid rgb(0, 0, 0);
+            background-color: aquamarine;
+            font-size: 22px;
+            width: 80vw;
+            /* width: 100vmin; height or width jo chota hai uska lo(vmin--vh in pc vmin--vw in mobile) */
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        This is a box
+    </div>
+    <div class="container">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus rem eaque tempore quod quaerat. Praesentium,
+            voluptates? Nostrum obcaecati dolores velit, voluptatum, perferendis vitae illo ex quae deleniti voluptate
+            possimus totam natus! Ut modi quo molestiae reiciendis cumque aut molestias quas recusandae vitae iste,
+            adipisci
+            dolore facilis voluptatem esse id delectus harum sunt atque beatae repellat quidem?
+        </p>
+    </div>
+    <div class="mycont">this is another container</div>
+</body>
+
+</html>
